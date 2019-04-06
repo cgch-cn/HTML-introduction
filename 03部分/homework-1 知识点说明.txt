@@ -1,3 +1,6 @@
+本次作业已经提交到我的git主页：
+https://github.com/cgch-cn/HTML-introduction
+
 	<p>本页面完成了以下知识点</p>
 		<p>超级链接和锚记链接及其属性</p>
 		<p>设置粗体（strong）、斜体（em）</p>

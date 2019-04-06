@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>图像标签img及其属性</title>
+</head>
+<body>
+	<h1>本练习的知识点是如下</h1>
+		用img标签、相对路径引入同级目录和下级目录的图片
+		用img标签、绝对路径引入图片
+		用img标签引入网络上的图片
+		设置width或height属性，修改图片大小
+		使用alt属性指定替代文字
+
+	<!-- <h1>以下用相对路径引入同级文件夹下的图片img1和下级文件夹images中的图片img2.jpg</h1> -->
+	<h1>1、用相对路径引入同级文件夹下的图片img1</h1>
+	<img src="img1.jpg">
+
+	<h1>2、用相对路径引入下级文件夹images中的图片img2.html</h1>
+	<img src="images/img2.jpg">
+
+	<h1>3、用绝对路径引入同级文件夹下的图片img1，设置替代文字“风景图片”</h1>
+	<p>由于使用的绝对路径是我的电脑上的绝对路径，因此在其他电脑上只能显示替代文字，想要显示图片的可以按照src的地址放置图片和demo.html文件</p>
+	<img src="F:\git\HTML-Introduction\04部分\img1.jpg" alt="风景图片"/>
+	<img src="F:\git\HTML-Introduction\04部分\img.jpg" alt="风景图片"/>
+
+	<h1>4、用相对路径引入同级文件夹下的图片img1，设置提示文字为“这是一张风景图片”</h1>
+	<img src="img1.jpg" alt="风景图片" title="这是一张风景图片">
+
+	<h1>5、引入网络上的图片</h1>
+	<img src="https://m.360buyimg.com/mobilecms/s750x750_jfs/t673/253/751997604/167980/eb495d4b/5485873aNd3a93f42.jpg!q80.dpg" title="玉髓" />
+
+	<h1>6、引入网络上的图片，并设置高度和宽度（请注意图片的变形）</h1>
+	<img src="https://m.360buyimg.com/mobilecms/s750x750_jfs/t673/253/751997604/167980/eb495d4b/5485873aNd3a93f42.jpg!q80.dpg" title="玉髓" width="500" height="300"/>
+
+	<h1>7、引入网络上的图片，并设置高度（或宽度），图片等比例缩放，没有变形</h1>
+	<img src="https://m.360buyimg.com/mobilecms/s750x750_jfs/t673/253/751997604/167980/eb495d4b/5485873aNd3a93f42.jpg!q80.dpg" title="玉髓" width="300"/>
+</body>
+</html>
