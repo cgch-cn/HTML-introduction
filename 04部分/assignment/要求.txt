@@ -1,0 +1,2 @@
+新建一个文件“assign-1.html”，其中显示本文件件中的img图片，并将“极客学院”所在的区域设置为链接，链接到极客学院主页，新窗口打开。
+将右端的两个圆形链接到Facebook（https://www.facebook.com/）和Twitter（http://www.twitter.com/）

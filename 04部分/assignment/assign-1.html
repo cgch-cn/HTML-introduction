@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>图像热点地图作业</title>
+</head>
+<body>
+
+	<h1>要求</h1>
+	<p>新建一个文件“assign-1.html”，其中显示本文件件中的img图片，并将“极客学院”所在的区域设置为链接，链接到极客学院主页https://www.jikexueyuan.com/，新窗口打开。</p>
+	<p>将右端的两个圆形链接到Facebook（https://www.facebook.com/）和Twitter（http://www.twitter.com/）</p>
+
+	<h1>完成的作业如下</h1>
+	<img src="img.jpg" usemap="#map1"/>
+	<map name="map1">
+		<area shape="rect" coords="10,16,124,56" href="https://www.jikexueyuan.com/" target="_blank" title="极客学院">
+
+		<area shape="circle" coords="940,38,22" href="https://www.facebook.com/" target="_blank" title="facebook">
+
+		<area shape="circle" coords="992,38,22" href="http://www.twitter.com" target="_blank" title="twitter">
+	</map>
+
+</body>
+</html>

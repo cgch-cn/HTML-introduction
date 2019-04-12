@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>图像热点地图</title>
+</head>
+<body>
+	<h1>1、显示图像</h1>
+	<img src="eg_planets.jpg" alt="planets" title="各个星星" />
+	<h1>2、三个热点</h1>
+	<p>分别是金星、水星和太阳，点击他们可以跳转到相应的百度百科</p>
+	<img src="eg_planets.jpg" alt="planets" title="各个星星" usemap="#planets-map" />
+	<map name="planets-map" id="planets-map">
+		<area shape="rect" coords="0,0,110,260" href="https://baike.baidu.com/item/%E5%A4%AA%E9%98%B3/24010?fr=aladdin" alt="太阳" title="太阳" target="_blank"/>
+		<area shape="circle" coords="130,162,9" href="https://baike.baidu.com/item/%E6%B0%B4%E6%98%9F/135917?fr=aladdin" alt="水星" title="水星" target="_blank" />
+		<area shape="circle" coords="180,140,13" href="https://baike.baidu.com/item/%E9%87%91%E6%98%9F/19410?fromtitle=venus&fromid=13211815&fr=aladdin" target="_blank" alt="金星" title="金星" />
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>图片热点地图课堂练习</title>
+</head>
+<body>
+	<h1>一、内容要求</h1>
+	<p1>在如下图片的每个logo上面设置热点链接，链接到相关的主页，右边的三角形和平行四边形链接到个人主页和百度，设置新页面打开链接，代替文字、title属性</p1>
+	<img src="images/img0.jpg" />
+
+	<h1>二、具体实现</h1>
+	<img src="images/img0.jpg" usemap="#map01" />
+	<map name="map01">
+		<area shape="rect" coords="18,28,206,138" href="https://www.JD.com/" target="_blank" title="京东">
+
+		<area shape="rect" coords="229,28,395,116" href="http://www.sohu.com/" target="_balnk" title="搜狐网">
+
+		<area shape="circle" coords="115,227,50" href="https://www.qq.com/" target="_balnk" title="腾讯">
+
+		<area shape="rect" coords="225,156,400,228" href="https://www.tmall.com/" target="_balnk" title="天猫">
+
+		<area shape="poly" coords="515 85 585 205 448 205" href="https://github.com/cgch-cn/" target="_balnk" title="cgch_cn的个人主页">
+
+		<area shape="poly" coords="527,83,666,83,736,204,596,204" href="https://www.baidu.com/" target="_balnk" title="百度">
+</body>
+</html>
