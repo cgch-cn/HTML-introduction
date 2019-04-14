@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>表格标签的基本属性</title>
+</head>
+<body>
+	<h1>一、建立基本表格</h1>
+	<p>建立一个两行三列的表格、每行依次显示1、2、3和4、5、6，宽度500像素，边框宽度1像素，单元格之间的距离为0，单元格内容与边框之间的距离为0，效果如下。本节的所有练习将在这个表格中进行</p>
+	<table border="1" width="500" cellspacing="0" cellpadding="0">
+		<!--以下为第一行的代码-->
+		<tr>
+			<td>1</td>			<td>2</td>			<td>3</td>
+		</tr>
+		<!--以下为第二行的代码-->
+		<tr>
+			<td>4</td>			<td>5</td>			<td>6</td>
+		</tr>
+	</table>
+	<hr />
+	<h1>二、设置表格的align属性和bgcolor属性</h1>
+	<p>设置表格的align属性为center，bgcolor属性为灰色“#ADADAD”</p>
+	<table border="1" width="500" cellspacing="0" cellpadding="0" align="center" bgcolor="#ADADAD">
+		<tr>
+			<td>1</td>			<td>2</td>			<td>3</td>
+		</tr>
+		<!--以下为第二行的代码-->
+		<tr>
+			<td>4</td>			<td>5</td>			<td>6</td>
+		</tr>
+	</table>
+	<hr />
+
+	<h1>三、设置第一行的align属性为center，恢复表格的bgcolor属性为默认值</h1>
+	<p>效果如下</p>
+	<table border="1" width="500" cellspacing="0" cellpadding="0" align="center">
+		<tr align="center">
+			<td>1</td>			<td>2</td>			<td>3</td>
+		</tr>
+		<!--以下为第二行的代码-->
+		<tr>
+			<td>4</td>			<td>5</td>			<td>6</td>
+		</tr>
+	</table>
+	<hr />
+
+	<h1>四、设置行的高度和垂直方向的对齐方式</h1>
+	<p>设置第一行的高度为100像素（height），垂直方向对齐方式为top，第一个单元格的垂直方向对齐方式为bottom，效果如下（可以看到，td的valign属性覆盖了tr的valign属性）</p>
+	<table border="1" width="500" cellspacing="0" cellpadding="0" align="center">
+		<tr align="center" height="100" valign="top">
+			<td valign="bottom">1</td>			<td>2</td>			<td>3</td>
+		</tr>
+		<!--以下为第二行的代码-->
+		<tr>
+			<td>4</td>			<td>5</td>			<td>6</td>
+		</tr>
+	</table>
+	<hr />
+
+	<h1>五、试验如何确定行、列、单元格的高度和宽度</h1>
+	<p>本例演示：当tr、td的height属性和width属性之间互相矛盾的时候，如何确定每一行和每一列的高度和宽度。</p>
+	<p>设置第一行的tr的height为100像素（height），第一行第二个单元格的height为30像素；</p>
+	<p>设置第一行第一列的width为20像素，第二行第一列的height为60像素</p>
+	<p>上述效果如下：</p>
+	<p>可以看到，第一行的行高为100，而不是更小的30；同样，第一列的列宽为60，而不是更小的20</p>
+	<table border="1" width="500" cellspacing="0" cellpadding="0" align="center">
+		<tr align="center" height="100" valign="top">
+			<td valign="bottom" width="20">1</td>			<td height="30">2</td>			<td>3</td>
+		</tr>
+		<!--以下为第二行的代码-->
+		<tr>
+			<td width="60">4</td>			<td>5</td>			<td>6</td>
+		</tr>
+	</table>
+	<hr />
+
+	<h1>六、试验在单元格中插入图像，并观察如何影响行、列、单元格的高度和宽度</h1>
+	<p>本例在上例的基础上插入一个图片，在第二行第一个单元格，请注意观察如何影响行、列、单元格的高度和宽度。</p>
+	<p>图片的宽度和高度都大于所在单元格的设置值</p>
+	<p>上述效果如下：</p>
+	<p>可以看到，都被撑大了</p>
+	<table border="1" width="500" cellspacing="0" cellpadding="0" align="center">
+		<tr align="center" height="100" valign="top">
+			<td valign="bottom" width="20">1</td>			<td height="30">2</td>			<td>3</td>
+		</tr>
+		<!--以下为第二行的代码-->
+		<tr>
+			<td width="60"><img src="img1.jpg"></td>			<td>5</td>			<td>6</td>
+		</tr>
+	</table>
+	<hr />
+
+	<h1>七、试验如何确定行、列、单元格的颜色</h1>
+	<p>先恢复表格为初始的效果，如下。</p>
+
+	<table border="1" width="500" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td>1</td>			<td>2</td>			<td>3</td>
+		</tr>
+		<!--以下为第二行的代码-->
+		<tr>
+			<td>4</td>			<td>5</td>			<td>6</td>
+		</tr>
+	</table>
+	<p>设置第一行的颜色为红色（red），第一个单元格的颜色为蓝色（blue）</p>
+	<p>上述效果如下：</p>
+		<table border="1" width="500" cellspacing="0" cellpadding="0" align="center">
+		<tr bgcolor="red">
+			<td bgcolor="blue">1</td>			<td>2</td>			<td>3</td>
+		</tr>
+		<!--以下为第二行的代码-->
+		<tr>
+			<td>4</td>			<td>5</td>			<td>6</td>
+		</tr>
+	</table>
+	<p>可以看到，第一个单元格的颜色为蓝色</p>
+	<hr />
+
+	<h1>八、试验单元格的合并</h1>
+	<p>先恢复表格为初始的效果，如下。</p>
+
+	<table border="1" width="500" cellspacing="0" cellpadding="0" align="center">
+		<tr align="center">
+			<td>1</td>			<td>2</td>			<td>3</td>
+		</tr>
+		<!--以下为第二行的代码-->
+		<tr>
+			<td>4</td>			<td>5</td>			<td>6</td>
+		</tr>
+	</table>
+	<p>合并第一行的后两个单元格</p>
+	<p>效果如下：</p>
+		<table border="1" width="500" cellspacing="0" cellpadding="0" align="center">
+		<tr align="center">
+			<td>1</td>			<td colspan="2">2</td>
+		</tr>
+		<!--以下为第二行的代码-->
+		<tr>
+			<td>4</td>			<td>5</td>			<td>6</td>
+		</tr>
+	</table>
+	<p>继续合并第一列的两个单元格</p>
+			<table border="1" width="500" cellspacing="0" cellpadding="0" align="center">
+		<tr align="center">
+			<td rowspan="2">1</td>			<td colspan="2">2</td>
+		</tr>
+		<!--以下为第二行的代码-->
+		<tr>
+			<td>5</td>			<td>6</td>
+		</tr>
+	</table>
+</body>
+</html>
