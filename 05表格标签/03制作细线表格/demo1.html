@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>细线表格的制作</title>
+</head>
+<body>
+	<h1>一、建立细线表格的难点分析</h1>
+	<p>细线表格是指边框为1像素的表格</p>
+	<p>建立细线表格的难点在于，无法通过设置border属性的方式将表格的边框设置为1像素。</p>
+		<p>一个普通的表格，即使将border设置为1、单元格之间的cellspacing都设为0，做出来的表格的边框宽度也是2像素，因为两个相邻的单元格都有边框，所以相邻两个单元格的边框（即两个单元格的边距）实际上是2像素。效果如下</p>
+	<table border="1" cellspacing="0" width="300">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+	</table>
+	<p>而将border设置为0将不显示任何边框，效果如下</p>
+	<table border="0" cellspacing="0" width="300">
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+	</table>
+	<h1>二、建立细线表格的思路</h1>
+	<p>既然无法通过设置border属性的方式做出细线表格，那么我们可以换个思路。</p>
+	<p>例如，如果我们需要将边框设为黑色，只要设置table的bgcolor为黑色、border为0、cellspacing为1，然后设置tr的bgcolor为白色，即可做出边框为1的细线表格</p>
+	<p>具体效果如下：</p>
+	<table border="0" cellspacing="1" bgcolor="#000" width="300">
+		<tr bgcolor="#ffffff">
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr bgcolor="#ffffff">
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+	</table>
+	<p>注意到，上述方法做出的表格，最左边和最右边的竖线的宽度小于中间的竖线宽度</p>
+	<p>对于这种方法做出的表格，边框宽度是cellspacing的值</p>
+</body>
+</html>
