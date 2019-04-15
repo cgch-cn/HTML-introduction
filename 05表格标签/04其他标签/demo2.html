@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>用表格进行图片布局</title>
+</head>
+<body>
+	<h1>本例演示用表格进行图片布局</h1>
+	<p>文件夹images中有五个图片，用表格对这些图片进行组合。</p>
+	<p>本例的关键在于事前根据每个图片的长和宽计算出表格的width和height，然后用表格进行布局即可。</p>
+	<p>中间过程中，为了容易观察，可以将border设置为1，过程中的结果如下：</p>
+	<table width="600" border="1" bgcolor="">
+		<tr>
+			<td colspan="2"><a href="#"><img src="images/tu1.jpg" /></a></td>
+			<td><a href="#"><img src="images/tu2.jpg" /></a></td>
+		</tr>
+		<tr>
+			<td><a href="#"><img src="images/tu3.jpg" /></a></td>
+			<td><a href="#"><img src="images/tu4.jpg" /></a></td>
+			<td><a href="#"><img src="images/tu5.jpg" /></a></td>
+		</tr>
+	</table>
+	<p>改为细线表格之后的实现结果如下：</p>
+	<table width="600" border="0" bgcolor="666666" cellpadding="0" cellspacing="1">
+		<tr bgcolor="ffffff">
+			<td colspan="2"><a href="#"><img src="images/tu1.jpg" /></a></td>
+			<td><a href="#"><img src="images/tu2.jpg" /></a></td>
+		</tr>
+		<tr bgcolor="ffffff">
+			<td><a href="#"><img src="images/tu3.jpg" /></a></td>
+			<td><a href="#"><img src="images/tu4.jpg" /></a></td>
+			<td><a href="#"><img src="images/tu5.jpg" /></a></td>
+		</tr>
+	</table>
+</body>
+</html>
