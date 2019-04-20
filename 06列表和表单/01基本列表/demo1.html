@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>基本列表</title>
+</head>
+<body>
+	<h1>一、无序列表及其三种项目符号</h1>
+	<p>无序列表的效果就相当于word中带项目符号的连续段落</p>
+	<p>使用ul标签和li标签生成无序列表，使用type属性指定项目符号，分别为实心圆点（disc，默认）、空心圆点（circle）和实心方块（square），以下分别演示效果：</p>
+
+	<table width="450" border="1" cellspacing="0">
+		<tr align="center">
+			<td width="150">实心圆点<br/>（disc，默认）</td>
+			<td width="150">空心圆点<br/>（circle）</td>
+			<td width="150">实心方块<br/>（square）</td>
+		</tr>
+		<tr>
+			<td>
+				<ul>
+					<li>实心圆点1</li>
+					<li>实心圆点2</li>
+					<li>实心圆点3</li>
+					<li>实心圆点4</li>
+				</ul>
+			</td>
+			<td>
+				<ul type="circle">
+					<li>空心圆点1</li>
+					<li>空心圆点2</li>
+					<li>空心圆点3</li>
+					<li>空心圆点4</li>
+				</ul>
+			</td>
+			<td>
+				<ul type="square">
+					<li>实心方块1</li>
+					<li>实心方块2</li>
+					<li>实心方块3</li>
+					<li>实心方块4</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<h1>二、有序列表及其5种编号</h1>
+	<p>有序列表的效果就相当于word中带自动编号的连续段落</p>
+	<p>使用ol标签和li标签生成无序列表，使用type属性指定项目符号，分别为阿拉伯数字（属性值1）、小写字母（属性值a）、大写字母（属性值A）、罗马数字（属性值i）、大写罗马数字（属性值I）以下分别演示效果：</p>
+	<table width="000" border="1" cellspacing="0">
+		<tr align="center">
+			<td width="130">阿拉伯数字<br/>（属性值1）</td>
+			<td width="120">小写字母<br/>（属性值a）</td>
+			<td width="120">大写字母<br/>（属性值A）</td>
+			<td width="120">罗马数字<br/>（属性值i）</td>
+			<td width="150">大写罗马数字<br/>（属性值I）</td>
+		</tr>
+		<tr>
+			<td>
+				<ol>
+					<li>阿拉伯数字</li>
+					<li>阿拉伯数字</li>
+					<li>阿拉伯数字</li>
+					<li>阿拉伯数字</li>
+				</ol>
+			</td>
+			<td>
+				<ol type="a">
+					<li>小写字母</li>
+					<li>小写字母</li>
+					<li>小写字母</li>
+					<li>小写字母</li>
+				</ol>
+			</td>
+			<td>
+				<ol type="A">
+					<li>大写字母</li>
+					<li>大写字母</li>
+					<li>大写字母</li>
+					<li>大写字母</li>
+				</ol>
+			</td>
+			<td>
+				<ol type="i">
+					<li>罗马数字</li>
+					<li>罗马数字</li>
+					<li>罗马数字</li>
+					<li>罗马数字</li>
+				</ol>
+			</td>
+			<td>
+				<ol type="I">
+					<li>大写罗马数字</li>
+					<li>大写罗马数字</li>
+					<li>大写罗马数字</li>
+					<li>大写罗马数字</li>
+				</ol>
+			</td>
+		</tr>
+	</table>
+	<h1>三、字母编号的有序列表超过26之后的情况</h1>
+	<p>本例演示当有序列表使用字母编号时，数量超过26之后的情况</p>
+	<p>可见，当超过26个之后，会进位为aa，ab，然后以此类推，实际上，就相当于按照26进制继续编号</p>
+	<ol type="a">
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+		<li>字母编号</li>	<li>字母编号</li>
+	</ol>
+	<h1>四、自定义列表</h1>
+	<p>HTML的自定义列表就相当于word中的2级自动编号，可以用于制作目录。</p>
+	<p>注意，这种方式只能制作2级编号</p>
+	<p>示例如下：</p>
+	<dl>
+		<dt>水果</dt>
+			<dd>橘子</dd>
+			<dd>香蕉</dd>
+			<dd>蓝莓</dd>
+			<dd>菠萝</dd>
+		<dt>手机品牌</dt>
+			<dd>华为</dd>
+			<dd>三星</dd>
+			<dd>ViVo</dd>
+	</dl>
+
+
+</body>
+</html>
