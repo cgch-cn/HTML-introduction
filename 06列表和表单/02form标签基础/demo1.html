@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>form标签基础</title>
+</head>
+<body>
+	<h1>form标签基础</h1>
+	<p>本例演示基本的表单标签，form标签，及其两种提交方式：get和post的区别</p><br/><br/>
+	<hr />
+	<p>生成一个用get方法提交的表单，点击提交之后，在地址栏就可以看到要提交的信息。具体效果如下：</p>
+	<form action="" method="get" name="iform01">
+		<input type="text" name="username" />
+		<input type="submit" />
+	</form>
+	<hr />
+	<p>生成一个用post方法提交的表单，点击提交之后，在地址栏就可以看到要提交的信息。注意，如果已经点击了上例中的提交按钮，则地址栏会始终显示刚才提交的内容，所以在运行本例之前，需要先关闭当前浏览器，重新打开本文件。具体效果如下：</p>
+	<form action="" method="post" name="iform01">
+		<input type="text" name="username" />
+		<input type="submit" />
+	</form>
+	<hr />
+</body>
+</html>
