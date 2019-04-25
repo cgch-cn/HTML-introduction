@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>各种input标签</title>
+</head>
+<body>
+	<h1>各种input标签</h1>
+	<p>本例演示各种input标签的使用方法，将完成一个注册页面，具体要求如下：</p>
+	<ul>
+		<li>get方式提交，以便于看到输入的东西</li>
+		<li>text方式，输入用户名</li>
+		<li>password方式，输入密码</li>
+		<li>radio方式：输入性别，男，女和保密，默认为男</li>
+		<li>checkbox方式，输入爱好，包括看书、看电影、有用、美食，默认都选中</li>
+		<li>file方式输入头像</li>
+		<li>hidden方式，获取注册时间</li>
+		<li>有提交按钮（显示“确认注册”）和重置按钮（显示“重新输入”）</li>
+		<li>用image方式显示一个查找按钮的图片，点击进行查找，图片在image文件夹下的search.jpg</li>
+	</ul>
+	<p>具体效果如下：</p>
+	<form action="" method="get" name="register">
+		用户名： <input type="text" name="name">		<br />
+		密码： <input type="password" name="pwd">	<br />
+		性别： 	<input type="radio" name="xingbie" checked="checked"> 男
+				<input type="radio" name="xingbie"> 女
+				<input type="radio" name="xingbie"> 保密	<br />
+		爱好：	<input type="checkbox" name="aihao" checked="checked"> 看书
+				<input type="checkbox" name="aihao" checked="checked"> 看电影
+				<input type="checkbox" name="aihao" checked="checked"> 游泳
+				<input type="checkbox" name="aihao" checked="checked"> 美食 <br />
+		头像：	<input type="file" name="touxiang"> <br />
+		<input type="hidden" name="shijian" value="2019-4-25">	<br />
+		<input type="submit" name="tijiao" value="确认注册">	
+		<input type="reset" name="reset" value="重新输入">	<br />
+		<input type="image" name="search" value="search" src="image/search.png">
+	</form>
+</body>
+</html>
