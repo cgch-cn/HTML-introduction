@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>label标签示例</title>
+</head>
+<body>
+	<h1>编写要求</h1>
+	<p>用form和input标签完成一个注册页面，并使用label标签改进用户体验，具体要求如下：</p>
+	<ul>
+		<li>text方式，输入用户名</li>
+		<li>password方式，输入密码</li>
+		<li>radio方式：输入性别，男，女和保密，默认不选中任何项</li>
+		<li>checkbox方式，输入爱好，包括看书、看电影、有用、美食，默认都不选中</li>
+	</ul>
+	<p>要求：上述内容，当鼠标点击提示文字的时候要自动进入后面的输入框或选中相应的选项</p>
+	<hr><p>实际实现效果如下：</p>
+	<form action="" method="get" name="zhuce">
+		<label>用户名：<input type="text" name="name"></label><br>
+		<label>密码：<input type="password" name="mima"></label><br>
+		性别：
+			<label><input type="radio" name="sex">男</label>
+			<label><input type="radio" name="sex">女</label>
+			<label><input type="radio" name="sex">保密</label><br>
+		爱好：
+			<label><input type="checkbox" name="aihao">看书</label>
+			<label><input type="checkbox" name="aihao">看电影</label>
+			<label><input type="checkbox" name="aihao">游泳</label>
+			<label><input type="checkbox" name="aihao">美食</label>
+	</form>
+</body>
+</html>
