@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Assignment：制作京东注册页面</title>
+</head>
+<body>
+	<h1>一、题目要求</h1>
+	<p>最终效果见<a href="zuizhongxiaoguo.html" target="_blank">链接</a></p>
+	具体要求如下：
+	<ol>
+		<li>整体用表格进行排版</li>
+		<li>每个input标签都要有name</li>
+		<li>最上方的文字可以只写企业用户</li>
+		<li>阳光采购下面的六个图片可以省略，文字不能省略</li>
+		<li>公司所在地要有各个省的名字，提示语：请选择所在的省，下拉框，点开时要显示20个。所在地的另外两个下拉框可以省略</li>
+		<li>购买用途的每个选项都要做label标签的优化</li>
+		<li>企业人数：10人以下，10至50人，50至100人，100至200人，200至500人，500至1000人，1000至2000人，2000至5000人，5000至10000人，10000人以上。显示10个选项，提示语：请选择企业人数</li>
+		<li>公司行业：提示语：请选择公司行业。选项：IT、通信、电子、互联网、金融业、房地产、建筑业、商业服务、贸易、批发、零售、租赁业、文体教育、工艺美术、服务业、文化、传媒、娱乐、体育、生产、加工、制造、交通、运输、物流、仓储、能源、矿产、环保、政府、非盈利机构、农、林、牧、渔、其他</li>
+		<li>公司性质：国企、外商独资、代表处、合资、民营、股份制企业、上市公司、国家机关、事业单位、银行、医院、学校/下级学院、律师事务所、社会团体、港澳台公司、其它、</li>
+		<li>所在部门：总经理办公室、人力资源部、财务部、生产技术部、计划营销部、安全监察部、党群工作部、工会办公室、保卫部、后勤部</li>
+		<li>去除验证码</li>
+		<li>除了购买类型/用途之外的，都要做label优化，包括最后的“我已经阅读并同意”</li>
+		<li>在提交之前加上一个隐藏域，记录注册时间，可以给一个固定值</li>
+		<li>注册按钮使用图片，位置是img/ regist-btn.jpg</li>
+	</ol>
+	<h1>二、完成的效果</h1>
+	<p>完成的效果如下：</p>
+	<p>为了尽可能的模仿京东的注册页面，以下在一个form标签中使用9行6列的表格控制布局</p>
+<form action="" method="get" name="reg_inf">
+	<table width="900" cellspacing="1" border="0" bgcolor="#000">
+		<tr align="center" bgcolor="#CDCD9A">
+			<td width="300" colspan="2"></td>
+			<td width="150">企业用户</td>
+			<td width="450" colspan="3"></td>
+		</tr>
+		<tr align="center" height="150" bgcolor="#ffffff">
+			<td>价格专享</td>
+			<td>96小时订单保留</td>
+			<td>合同增票保障</td>
+			<td>企业级VIP通道</td>
+			<td>场景采购</td>
+			<td>精选商品</td>
+		</tr>
+		<tr bgcolor="#CDCD9A">
+			<td colspan="6"> 
+				<font size="-1">服务须知：我们的审核时限为24小时（工作日），遇到法定节假日顺延。如有疑问，请拨打企业专项热线：400-026-0000或留言咨询.</font>
+			</td>
+		</tr>
+		<tr bgcolor="#ffffff">
+			<td colspan="6">账户信息</td>
+		</tr>
+		<tr bgcolor="#ffffff">
+			<td colspan="6" align="center">
+				<form name="user_info">
+					<label> 用户名：<input type="text" name="user_name"><br></label>
+					<label> 请设置密码：<input type="password" name="password_first"><br></label>
+					<label> 请确认密码：<input type="password" name="password_twice"><br></label>
+				</form>
+			</td>			
+		</tr>
+		<tr bgcolor="#CDCD9A">
+			<td colspan="6">公司信息</td>
+		</tr>
+		<tr bgcolor="#ffffff">
+			<td colspan="6" align="center">
+				<label> 公司名称：<input type="text" name="company_name"><br></label>
+				<label>公司所在地：<select name="location">
+					<option selected="selected" disabled="disabled">请选择</option>  <option> 北京市</option>	<option> 天津市</option>	<option> 上海市</option>	<option> 江苏省</option>	<option> 浙江省</option>	<option> 安徽省</option>	<option> 福建省</option>	<option> 江西省</option>	<option> 湖南省</option>	<option> 山东省</option>	<option> 河南省</option>	<option> 内蒙古自治区</option>	<option> 湖北省</option>	<option> 宁夏回族自治区</option>	<option> 新疆维吾尔自治区</option>	<option> 广东省</option>	<option> 西藏自治区</option>	<option> 海南省</option>	<option> 广西壮族自治区</option>	<option> 四川省</option>	<option> 河北省</option>	<option> 贵州省</option>	<option> 重庆市</option>	<option> 山西省</option>	<option> 云南省</option>	<option> 辽宁省</option>	<option> 陕西省</option>	<option> 吉林省</option>	<option> 甘肃省</option>	<option> 黑龙江省</option>	<option> 青海省</option>	<option> 台湾省</option>	<option> 香港特别行政区</option>	<option> 澳门特别行政区</option>
+				</select><br></label>
+				<label>公司地址：<input type="text" name="address"><br></label>
+				购买类型/用途：
+					<label><input type="checkbox" name="type_">IT设备</label>
+					<label><input type="checkbox" name="type_">数码通讯</label>
+					<label><input type="checkbox" name="type_">办公用品耗材</label>
+					<label><input type="checkbox" name="type_">大家电</label>
+					<label><input type="checkbox" name="type_">项目合作-政府采购</label>
+					<label><input type="checkbox" name="type_">礼品</label>
+					<label><input type="checkbox" name="type_">商旅（机票/酒店等）</label><br>
+				<label> 推荐人手机：<input type="text" name="phone_num"><br></label>
+				<label> 企业人数：<select name="employee_num">
+					<option selected="selected" disabled="disabled">请选择</option> <option>10人以下</option>	<option>10至50人</option>	<option>50至100人</option>	<option>100至200人</option>	<option>200至500人</option>	<option>500至1000人</option>	<option>1000至2000人</option>	<option>2000至5000人</option>	<option>5000至10000人</option>	<option>10000人以上</option>
+				</select><br></label>
+				<label> 公司行业：<select name="industry">
+					<option selected="selected" disabled="disabled">请选择</option>	<option>IT</option>	<option>通信</option>	<option>电子</option>	<option>互联网</option>	<option>金融业</option>	<option>房地产</option>	<option>建筑业</option>	<option>商业服务</option>	<option>贸易</option>	<option>批发</option>	<option>零售</option>	<option>租赁业</option>	<option>文体教育</option>	<option>工艺美术</option>	<option>服务业</option>	<option>文化</option>	<option>传媒</option>	<option>娱乐</option>	<option>体育</option>	<option>生产</option>	<option>加工</option>	<option>制造</option>	<option>交通</option>	<option>运输</option>	<option>物流</option>	<option>仓储</option>	<option>能源</option>	<option>矿产</option>	<option>环保</option>	<option>政府</option>	<option>非盈利机构</option>	<option>农</option>	<option>林</option>	<option>牧</option>	<option>渔</option>	<option>其他</option>	
+				</select><br></label>
+				<label>公司性质：<select name="property">
+					<option selected="selected" disabled="disabled">请选择</option>	<option>国企</option>	<option>外商独资</option>	<option>代表处</option>	<option>合资</option>	<option>民营</option>	<option>股份制企业</option>	<option>上市公司</option>	<option>国家机关</option>	<option>事业单位</option>	<option>银行</option>	<option>医院</option>	<option>学校/下级学院</option>	<option>律师事务所</option>	<option>社会团体</option>	<option>港澳台公司</option>	<option>其它</option>
+				</select><br></label>
+			</td>
+		</tr>
+		<tr bgcolor="#CDCD9A">
+			<td colspan="6">联系人信息</td>
+		</tr>
+		<tr bgcolor="#ffffff">
+			<td colspan="6" align="center">
+				<label>联系人姓名：<input type="text" name="contacts"><br></label>
+				<label>所在部门：<select name="contacts_department">
+					<option selected="selected" disabled="disabled">请选择</option>	<option>总经理办公室</option>	<option>人力资源部</option>	<option>财务部</option>	<option>生产技术部</option>	<option>计划营销部</option>	<option>安全监察部</option>	<option>党群工作部</option>	<option>工会办公室</option>	<option>保卫部</option>	<option>后勤部</option>
+				</select><br></label>
+				<label>固定电话：<input type="text" name="fixed telephone"><br></label>
+				<label>手机号码：<input type="text" name="contacts_phone"><br></label>
+				<label>联系人邮箱：<input type="text" name="contacts_email"><br></label>
+				<label><input type="checkbox" checked="checked" name="agree">我已阅读并同意<a href="#">《京东用户注册协议书》</a><br></label>
+				<input type="hidden" name="regist_time" value="2019-4-30">
+				<input type="image" name="submit_" src="img/regist-btn.jpg">
+				</td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>
