@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>iframe标签习题</title>
+</head>
+<body>
+	<h1>题目要求</h1>
+	<p>建立一个网页，上方有四个超级链接：百度、京东、极客学院、默认视频，下方有一个iframe，用于显示上面链接的内容，默认视频来自优酷视频，链接为http://player.youku.com/embed/XNDExODk0MTMyOA==，iframe的高度498，宽度510，没有边框，允许全屏（增加'allowfullscreen'即可。</p>
+	具体效果如下（本例中，极客学院拒绝了我们的连接，估计是为了保护他们的网站，其他三个都可以正常访问）：
+	<table width="600" border="1" cellspacing="1">
+		<tr align="center">
+			<td width="150"><a href="https://www.baidu.com/" target="main">百度</a></td>
+			<td><a href="https://www.jd.com/" target="main">京东</a></td> 
+			<td><a href="http://www.jikexueyuan.com/" target="main">极客学院</a></td>
+			<td><a href="http://player.youku.com/embed/XNDExODk0MTMyOA==" target="main">默认视频</a></td>
+		</tr>
+	</table>
+	<iframe src="http://player.youku.com/embed/XNDExODk0MTMyOA==" name="main" height="498" width="510" frameborder="0"></iframe>
+</body>
+</html>
